@@ -4,24 +4,58 @@ gradient colors: f52376, ffbd17;
 want to add pretty cyan: #17ffe0;
 darker ^: #10c9b0;
 i like this blue too: #5F9EA0;
+pretty dark pink: #dc4b85;
+pretty purple: #9c80ac;
+green: #6aba4a;
+slightly darker turq: #52bfb8;
+
+
 
 MAKE TOGGL nav BUTTON DARK PURPLE 
 
-*figure out bounce animation longer delay
 *possibly cuter font
-*move imgs to folder
+*make nav bar fixed 
+*add copyright erika barrios
+*add social medias
+
+.row
+{
+	display:inline-flex;
+	width:100;
+}
 
 
 */
 
+@font-face {
+    font-family: 'pacifico';
+    src: url('fonts/pacifico-webfont.woff2') format('woff2'),
+         url('fonts/pacifico-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'lora';
+    src: url('lora-regular-webfont.woff2') format('woff2'),
+         url('lora-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 
 
+/* Hello World, I'm Erika */
 #intro h1 {
+	font-family: pacifico, monospace, arial;
+	font-size:7em;
 	padding-bottom: 10%;
 	padding-top: 10%;
-	  color: #10c9b0;
-	  font-family: monospace;
+	  color: #60c8cc;
+	  
+	  
 	  overflow: hidden; /* Ensures the content is not revealed until the animation */
 	  border-right: .15em gray; /* The typwriter cursor */
 	  white-space: nowrap; /* Keeps the content on a single line */
@@ -32,8 +66,6 @@ MAKE TOGGL nav BUTTON DARK PURPLE
 	    blink-caret .5s step-end infinite;
 
 }
-
-
 
 /* The typing effect */
 @keyframes typing {
@@ -47,25 +79,23 @@ MAKE TOGGL nav BUTTON DARK PURPLE
   50% { border-color: orange }
 }
 
-.myBlurb
-{
+/* My about me writing and pic, pushing both lower into gradint */
+.myBlurb {
 	margin-top: 20%;
 }
-.myPic img
-{
-	margin-top: 80%;
+
+.myPic img {
+	margin-top: 5em;
 }
 
 
-
+/*background of about me/education section*/
 #aboutMe {
 
-	background-image: url("img/topAndBottomWhite7copy.png"); 
+	background-image: url("img/bgGrad.png"); /*gradient, top and bottom fade to white*/
 	background-repeat: no-repeat;
 	background-size: cover auto;
 	padding: 10% 0 10% 0;
-
-
 	/*. GRADIENT BACKGROUND
 	padding: 10% 0 10% 10%;
 	background: -moz-linear-gradient(-45deg, rgba(255,189,23,0.71) 0%, rgba(251,123,64,0.71) 25%, rgba(245,35,118,0.71) 58%, rgba(245,35,118,0.71) 85%, rgba(245,35,118,0.71) 92%); /* FF3.6-15 
@@ -75,61 +105,106 @@ MAKE TOGGL nav BUTTON DARK PURPLE
 	*/
 }
 
-.lead p
-{
+.lead p {
 	padding-top: 10%;
-	color
-}
-
-#aboutMe p{
-	margin-left: 35%;
 	
 }
 
-#myEducation h1, #contact h1, #contact h2
-{
+.myBlurb p {
+	margin-left: 35%;
+	font-family: lora;
+	
+}
+
+
+
+#myEducation h2, #contact h1, #contact h2 {
 	margin:auto;
+	text-align: center;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif; 
+}
+
+h2
+{
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif; 
+}
+
+.educationInfo 
+{
 	text-align: center;
 }
 
+span.glyphicon {
+    font-size: 2em;
+}
+span.glyphicon-education {
+    font-size: 2.6em;
+}
+
+
+/*picture bounce animation delay*/
 #aboutMe .myPic img {
 	animation-delay: 2.5s;
 	padding-top: 10%;
 }
 
+
+/*nav bar*/
 .navbar {
 	border-style: none;
 }
-
+/*nav bar toggle button*/
 .navbar-toggle button{
 	color: #4B0082;
 	border-color: white;
 	border-width: 2em;
 }
-
+/*nav bar links*/
 .navbar-brand, ul.nav li a, ul.nav li a:visited {
     color: #E6E6FA !important;
 }
-
+/*nav bar links*/
 ul.nav li a:hover, ul.nav li a:active {
     color: white !important;
 }
-
+/*nav bar links*/
 ul.nav li.active a {
     color: black !important;
 }
-
-#wholeNav
-{
+/*nav bar background color*/
+#wholeNav {
 	background-color:#4B0082;
 	opacity: 0.6;
 }
 
 
+
+/*if device screen is -- OR MORE (min width) do the following */
+@media (min-width: @screen-lg-min) {#intro h1 {font-size: 5em;}} /* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-md-min) {#intro h1 {font-size: 5em;}} /* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-sm-min) { #intro h1 {font-size: 3em;}} /* Small devices (tablets, 768px and up) */
+
+
+/*if device screen is 575/576px OR LESS (max width) do the following */
+@media (max-width: 576px) {img {display:block; margin-left:auto; margin-right: auto; }} /*centers my picture when small screen*/
+
+@media (max-width: 576px) {img {max-width: 50%;}} /*makes picture smaller when small screen*/
+
+@media (max-width: 1350px) {#intro h1 {font-size: 6em;}}
+@media (max-width: 1250px) {#intro h1 {font-size: 5.5em;}}
+@media (max-width: 1024px) {#intro h1 {font-size: 5em;}}
+@media (max-width: 1000px) {#intro h1 {font-size: 4em;}} /*makes "hello world i'm erika" smller when small screen*/
+@media (max-width: 900px) {#intro h1 {font-size: 3em;}} /*makes "hello world i'm erika" smller when small screen*/
+@media (max-width: 575px) {#intro h1 {font-size: 2em;}} /*makes "hello world i'm erika" smller when small screen*/
+@media (max-width: 400px) {#intro h1 {font-size: 1.5em;}} /*makes "hello world i'm erika" smller when small screen*/
+
+
+
+
+
+
 /*GRADIENT NAV BAR, EH */
 /*
-#wholeNav{
-	Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7c17ff+0,7c17ff+100&0.4+10,0.4+53 
 background: -moz-linear-gradient(left, rgba(124,23,255,0.4) 0%, rgba(124,23,255,0.4) 10%, rgba(124,23,255,0.4) 53%, rgba(124,23,255,0.4) 100%); /* FF3.6-15 
 background: -webkit-linear-gradient(left, rgba(124,23,255,0.4) 0%,rgba(124,23,255,0.4) 10%,rgba(124,23,255,0.4) 53%,rgba(124,23,255,0.4) 100%); /* Chrome10-25,Safari5.1-6 
 background: linear-gradient(to right, rgba(124,23,255,0.4) 0%,rgba(124,23,255,0.4) 10%,rgba(124,23,255,0.4) 53%,rgba(124,23,255,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ 
@@ -138,20 +213,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#667c17ff', e
 }
 */ 
 
-/*if device screen is 575/576px OR LESS (max width) do the following */
-@media (min-width: @screen-lg-min) {#intro h1 {font-size: 5em;}} /* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-md-min) {#intro h1 {font-size: 5em;}} /* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-sm-min) { #intro h1 {font-size: 3em;}} /* Small devices (tablets, 768px and up) */
-
-
-@media (max-width: 575px) {#intro h1 {font-size: 1.5em;}}
-@media (max-width: 576px) {img {max-width: 50%; padding-top: 20px;}}
-@media (max-width: 576px) {img {font-size: 1em;}}
-@media (min-width: 576px) {img {padding-top: 20px;}}
 
 /*
 breakpoints:
 576,
 768,
 992,
-12000*/
+12000
+
+@media (max-width: 576px) {img {font-size: 1em;}}
+@media (min-width: 576px) {img {padding-top: 5%;}}
+
+little education parts
+<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Idea">Idea</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"     title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+colored in social medias<div>Icons made by <a href="https://www.flaticon.com/authors/pixel-buddha" title="Twitter">Twitter</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"     title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+black and white social medieas <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Instagram">Instagram</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"     title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+*/
