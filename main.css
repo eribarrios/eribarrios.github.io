@@ -14,9 +14,7 @@ MAKE TOGGL nav BUTTON DARK PURPLE
 
 */
 
-#intro{
-	/*  http://colorzilla.com/gradient-editor/#ffbd17+0,f52376+58,f52376+58,f52376+85&0.71+25,0.71+92 */
-}
+
 
 
 #intro h1 {
@@ -32,6 +30,7 @@ MAKE TOGGL nav BUTTON DARK PURPLE
 	  animation: 
 	    typing 3.5s steps(30, end),
 	    blink-caret .5s step-end infinite;
+
 }
 
 
@@ -48,26 +47,54 @@ MAKE TOGGL nav BUTTON DARK PURPLE
   50% { border-color: orange }
 }
 
-
+.myBlurb
+{
+	margin-top: 20%;
+}
+.myPic img
+{
+	margin-top: 80%;
+}
 
 
 
 #aboutMe {
+
+	background-image: url("img/topAndBottomWhite7copy.png"); 
+	background-repeat: no-repeat;
+	background-size: cover auto;
+	padding: 10% 0 10% 0;
+
+
+	/*. GRADIENT BACKGROUND
 	padding: 10% 0 10% 10%;
-	background: -moz-linear-gradient(-45deg, rgba(255,189,23,0.71) 0%, rgba(251,123,64,0.71) 25%, rgba(245,35,118,0.71) 58%, rgba(245,35,118,0.71) 85%, rgba(245,35,118,0.71) 92%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg, rgba(255,189,23,0.71) 0%,rgba(251,123,64,0.71) 25%,rgba(245,35,118,0.71) 58%,rgba(245,35,118,0.71) 85%,rgba(245,35,118,0.71) 92%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, rgba(255,189,23,0.71) 0%,rgba(251,123,64,0.71) 25%,rgba(245,35,118,0.71) 58%,rgba(245,35,118,0.71) 85%,rgba(245,35,118,0.71) 92%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5ffbd17', endColorstr='#b5f52376',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background: -moz-linear-gradient(-45deg, rgba(255,189,23,0.71) 0%, rgba(251,123,64,0.71) 25%, rgba(245,35,118,0.71) 58%, rgba(245,35,118,0.71) 85%, rgba(245,35,118,0.71) 92%); /* FF3.6-15 
+	background: -webkit-linear-gradient(-45deg, rgba(255,189,23,0.71) 0%,rgba(251,123,64,0.71) 25%,rgba(245,35,118,0.71) 58%,rgba(245,35,118,0.71) 85%,rgba(245,35,118,0.71) 92%); /* Chrome10-25,Safari5.1-6 
+	background: linear-gradient(135deg, rgba(255,189,23,0.71) 0%,rgba(251,123,64,0.71) 25%,rgba(245,35,118,0.71) 58%,rgba(245,35,118,0.71) 85%,rgba(245,35,118,0.71) 92%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5ffbd17', endColorstr='#b5f52376',GradientType=1 ); /* IE6-9 fallback on horizontal gradient 
+	*/
 }
 
+.lead p
+{
+	padding-top: 10%;
+	color
+}
 
-
-#aboutMe p {
+#aboutMe p{
 	margin-left: 35%;
+	
+}
+
+#myEducation h1, #contact h1, #contact h2
+{
+	margin:auto;
+	text-align: center;
 }
 
 #aboutMe .myPic img {
-	-vendor-animation-delay: 10s;
+	animation-delay: 2.5s;
+	padding-top: 10%;
 }
 
 .navbar {
@@ -113,7 +140,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#667c17ff', e
 
 /*if device screen is 575/576px OR LESS (max width) do the following */
 @media (min-width: @screen-lg-min) {#intro h1 {font-size: 5em;}} /* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-md-min) {#intro h1 {font-size: 4em;}} /* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {#intro h1 {font-size: 5em;}} /* Medium devices (desktops, 992px and up) */
 @media (min-width: @screen-sm-min) { #intro h1 {font-size: 3em;}} /* Small devices (tablets, 768px and up) */
 
 
