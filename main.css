@@ -3,65 +3,13 @@
 
 /********************FONTS***************/
 
-/*AILERON ITALIC*/
+/*LUDICROUS -- used in intro "hello world i'm erika"*/
 @font-face {
-    font-family: 'aileronitalic';
-    src: url('fonts/aileron/aileron-italic-webfont.woff2') format('woff2'),
-         url('fonts/aileron/aileron-italic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+    font-family: 'ludi';
+    src: url('fonts/Ludi/Ludi.woff') format('woff');    /*relatively modern browsers*/
 }
 
-
-
-/*AILERON LIGHT*/
-@font-face {
-    font-family: 'aileronlight';
-    src: url('fonts/aileron/aileron-light-webfont.woff2') format('woff2'),
-         url('fonts/aileron/aileron-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-/*AILERON REGULAR*/
-@font-face {
-    font-family: 'aileronregular';
-    src: url('fonts/aileron/aileron-regular-webfont.woff2') format('woff2'),
-         url('fonts/aileron/aileron-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-/*AILERON THIN*/
-@font-face {
-    font-family: 'aileronthin';
-    src: url('fonts/aileron/aileron-thin-webfont.woff2') format('woff2'),
-         url('fonts/aileron/aileron-thin-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-/*AILERON ULTRATHIN*/
-@font-face {
-    font-family: 'aileronultralight';
-    src: url('aileron-ultralight-webfont.woff2') format('woff2'),
-         url('aileron-ultralight-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-/*PACIFICO -- used as "hello world" intro*/
+/*PACIFICO -- used as a fallback "hello world" intro*/
 @font-face {
     font-family: 'pacifico';
     src: url('fonts/Pacifico/pacifico-webfont.woff2') format('woff2'), /*modern browsers*/
@@ -72,63 +20,55 @@
 
 }
 
-/*LORA -- used as education/contact h1*/
+/*AILERON LIGHT -- used in my blurb about me p*/
 @font-face {
-    font-family: 'lora';
-    src: url('fonts/Lora/lora-regular.eot'),                             /* IE9 Compat Modes */
-    	 url('fonts/Lora/lora-regular-webfont.woff2') format('woff2'),   /*modern browsers*/
-         url('fonts/Lora/lora-regular-webfont.woff') format('woff');     /*relatively modern browsers*/
-    font-weight: normal;
-    font-style: normal;
-
+    font-family: 'aileronlight';
+    src: url('fonts/Aileron/aileron-light-webfont.woff2') format('woff2'),
+         url('fonts/Aileron/aileron-light-webfont.woff') format('woff');
 }
 
-/*ALEO LIGHT*/
-@font-face {
-    font-family: 'aleoLight';
-    src: url('fonts/Aleo/Light/aleo-light-webfont.eot'),                     /* IE9 Compat Modes */
-    	 url('fonts/Aleo/Light/aleo-light-webfont.woff2') format('woff2'),   /*modern browsers*/
-         url('fonts/Aleo/light/aleo-light-webfont.woff') format('woff'),     /*relatively modern browsers*/
-         url('fonts/Aleo/light/aleo-light-webfont.ttf') format('truetype'),  /*safari, android, iOS*/
-         url('aleo.svg#aleo-light-webfont') format('svg');					 /* Legacy iOS */
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-/*ALEO REGULAR*/
+/*ALEO REGULAR-- used as education/contact h1*/
 @font-face {
     font-family: 'aleo';
     src: url('fonts/Aleo/Regular/aleo-regular-webfont.eot'),                     /* IE9 Compat Modes */
-    	 url('fonts/Aleo/Regular/aleo-regular-webfont.woff2') format('woff2'),   /*modern browsers*/
+         url('fonts/Aleo/Regular/aleo-regular-webfont.woff2') format('woff2'),   /*modern browsers*/
          url('fonts/Aleo/Regular/aleo-regular-webfont.woff') format('woff'),     /*relatively modern browsers*/
          url('fonts/Aleo/Regular/aleo-regular-webfont.ttf') format('truetype'),  /*safari, android, iOS*/
-         url('aleo.svg#aleo-regular-webfont') format('svg');					 /* Legacy iOS */
+         url('aleo.svg#aleo-regular-webfont') format('svg');                     /* Legacy iOS */
+}
+
+/*AILERON REGULAR --used in my education info p */
+@font-face {
+    font-family: 'aileronregular';
+    src: url('fonts/Aileron/aileron-regular-webfont.woff2') format('woff2'),
+         url('fonts/Aileron/aileron-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
-/*ALEO BOLD*/
+/*AILERON BOLD -- used in nav link text */
 @font-face {
-    font-family: 'aleoBold';
-    src: url('fonts/Aleo/Bold/aleo-bold-webfont.eot'),                     /* IE9 Compat Modes */
-    	 url('fonts/Aleo/Bold/aleo-bold-webfont.woff2') format('woff2'),   /*modern browsers*/
-         url('fonts/Aleo/Bold/aleo-bold-webfont.woff') format('woff'),     /*relatively modern browsers*/
-         url('fonts/Aleo/Bold/aleo-bold-webfont.ttf') format('truetype'),  /*safari, android, iOS*/
-         url('aleo.svg#aleo-light-webfont') format('svg');					 /* Legacy iOS */
+    font-family: 'aileronbold';
+    src: url('fonts/Aileron/aileron-bold-webfont.woff2') format('woff2'),
+         url('fonts/Aileron/aileron-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
+
 
 /********************END OF FONTS***************/
 
 
 /* Hello World, I'm Erika */
 #intro h1 {
-	font-family: pacifico, monospace, arial;
-	font-size:7em;
+	font-family: ludi, pacifico, monospace, arial;
+	font-size:9em;
 	padding-bottom: 10%;
 	padding-top: 10%;
 	  color: #60c8cc;
+      opacity: 0.7;
 	  
 	  
 	  overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -139,7 +79,6 @@
 	  animation: 
 	    typing 3.5s steps(30, end),
 	    blink-caret .5s step-end infinite;
-
 }
 
 /* The typing effect */
@@ -159,7 +98,7 @@
 	margin-top: 20%;
 }
 .myPic img {
-	margin-top: 5em;
+	margin-top: 8.2em;
 }
 
 
@@ -169,7 +108,7 @@
 	background-image: url("img/bgGrad.png"); /*gradient, top and bottom fade to white*/
 	background-repeat: no-repeat;
 	background-size: cover auto;
-	padding: 10% 0 10% 0;
+	padding: 3% 0 10% 0;
 }
 
 
@@ -183,7 +122,6 @@
 }
 
 
-
 /*education info headers*/
 #myEducation h2, #contact h1, #contact h2 {
 	margin:auto;
@@ -193,18 +131,15 @@
 }
 
 
-
-/*education info explanation*/
-#myEducation p
-{
+/*education info explanation p */
+#myEducation p {
 	font-family: aileronregular, helvetica, sans-serif;
 	margin: 0 4em 0 4em;
 }
 
 
 /*centers glyphs and social media icons*/
-.educationInfo, #contact
-{
+.educationInfo, #contact {
 	text-align: center;
 }
 
@@ -222,13 +157,11 @@ span.glyphicon-education {
 
 /*picture bounce animation delay*/
 #aboutMe .myPic img {
-	animation-delay: 2.5s;
-	padding-top: 10%;
+	animation-delay: 5s;
 }
 
 /*social media icons*/
-#contact img
-{
+#contact img {
 	opacity: 0.7;
 }
 
@@ -238,20 +171,19 @@ span.glyphicon-education {
 	border-style: none;
 }
 /*nav bar toggle button*/
-.navbar-toggle button{
-	color: #4B0082;
+.navbar-toggle button {
+	color: #60c8cc;
 	border-color: white;
 	border-width: 2em;
 }
 /*nav bar links*/
 .navbar-brand, ul.nav li a, ul.nav li a:visited {
-    color: #E6E6FA !important;
-    font-family:aileronregular, helvetica, sans-serif;
-    
+    color: white !important;
+    font-family:aileronbold, helvetica, sans-serif; 
 }
 /*nav bar links*/
 ul.nav li a:hover, ul.nav li a:active {
-    color: white !important;
+    color:   #ffbd17!important;
 }
 /*nav bar links*/
 ul.nav li.active a {
@@ -259,72 +191,44 @@ ul.nav li.active a {
 }
 /*nav bar background color*/
 #wholeNav {
-	background-color:#4B0082;
+	background-color:#78b1b3;
 	opacity: 0.6;
 }
 
 
 /*centers footer and makes footer p/contact h1 purple*/
-footer p
-{
+footer p {
 	text-align: center;
 }
-footer p, #contact h1{
-	color: #4B0082; 
+footer p, #contact h1 {
+	color: #60c8cc; 
 }
 
 
 /*if device screen is -- OR MORE (min width) do the following */
-@media (min-width: @screen-lg-min) {#intro h1 {font-size: 5em;}} /* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-md-min) {#intro h1 {font-size: 5em;}} /* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-sm-min) { #intro h1 {font-size: 3em;}} /* Small devices (tablets, 768px and up) */
+@media (min-width: 1000px) {#aboutMe img  {padding-top: 20%;}} /*makes picture move down a bit when larger screen*/
 
 
-/*if device screen is 575/576px OR LESS (max width) do the following */
-@media (max-width: 1350px) {img {display:block; margin-left:auto; margin-right: auto; }} /*centers my picture when small screen*/
+
+
+/*if device screen is ...px OR LESS (max width) do the following */
+@media (max-width: 1350px) {#aboutMe img {display:block; margin-left:auto; margin-right: auto; }} /*centers my picture when small screen*/
 @media (max-width: 1350px) {.myBlurb p {display:block; padding:0 2em 0 2em; margin-left:auto; margin-right: auto; }} /*centers text when small screen*/
 @media (max-width: 1350px) { #myEducation p {padding-bottom: 10%;}} /*spaces out education info when smaller*/
-
-@media (max-width: 576px) {img {max-width: 50%;}} /*makes picture smaller when small screen*/
-
-/*makes "hello world i'm erika" smller when small screen*/
-@media (max-width: 1350px) {#intro h1 {font-size: 6em;}}
-@media (max-width: 1250px) {#intro h1 {font-size: 5.5em;}}
-@media (max-width: 1024px) {#intro h1 {font-size: 5em;}}
-@media (max-width: 1000px) {#intro h1 {font-size: 4em;}} 
-@media (max-width: 900px) {#intro h1 {font-size: 3em;}} 
-@media (max-width: 575px) {#intro h1 {font-size: 2em;}} 
-@media (max-width: 400px) {#intro h1 {font-size: 1.5em;}} 
+@media (max-width: 575px) {#aboutMe img {max-width: 60%;}} /*makes picture smaller as screen gets smaller*/
 
 
+/*makes "hello world i'm erika" smaller when small screen*/
+@media (max-width: 1350px) {#intro h1 {font-size: 7em;}}
+@media (max-width: 1250px) {#intro h1 {font-size: 6.5em;}}
+@media (max-width: 1024px) {#intro h1 {font-size: 5.5em;}}
+@media (max-width: 1000px) {#intro h1 {font-size: 5em;}} 
+@media (max-width: 900px) {#intro h1 {font-size: 4.5em;}} 
+@media (max-width: 575px) {#intro h1 {font-size: 3.2em;}} 
+@media (max-width: 400px) {#intro h1 {font-size: 3em;}} 
 
 
 
 
-/*GRADIENT NAV BAR, EH */
-/*
-background: -moz-linear-gradient(left, rgba(124,23,255,0.4) 0%, rgba(124,23,255,0.4) 10%, rgba(124,23,255,0.4) 53%, rgba(124,23,255,0.4) 100%); /* FF3.6-15 
-background: -webkit-linear-gradient(left, rgba(124,23,255,0.4) 0%,rgba(124,23,255,0.4) 10%,rgba(124,23,255,0.4) 53%,rgba(124,23,255,0.4) 100%); /* Chrome10-25,Safari5.1-6 
-background: linear-gradient(to right, rgba(124,23,255,0.4) 0%,rgba(124,23,255,0.4) 10%,rgba(124,23,255,0.4) 53%,rgba(124,23,255,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ 
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#667c17ff', endColorstr='#667c17ff',GradientType=1 ); /* IE6-9 
-
-}
-*/ 
 
 
-/*
-breakpoints:
-576,
-768,
-992,
-12000
-
-@media (max-width: 576px) {img {font-size: 1em;}}
-@media (min-width: 576px) {img {padding-top: 5%;}}
-
-little education parts
-<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Idea">Idea</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"     title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-
-colored in social medias<div>Icons made by <a href="https://www.flaticon.com/authors/pixel-buddha" title="Twitter">Twitter</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"     title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-black and white social medieas <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Instagram">Instagram</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"     title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-*/
